@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background-color: #f8fafc; color: #334155; }
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 3rem; background-color: #ffffff; border-bottom: 1px solid #e2e8f0;
+}
+.nav-brand { font-size: 1.25rem; font-weight: 700; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; }
+.nav-brand i { color: #2563eb; }
+.nav-links a { text-decoration: none; color: #64748b; margin: 0 1rem; font-weight: 600; font-size: 0.9rem; cursor: pointer; }
+.nav-links a.active { color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 0.5rem; }
+.nav-profile { display: flex; align-items: center; gap: 0.75rem; }
+.avatar { width: 36px; height: 36px; background-color: #dbeafe; color: #2563eb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+
+/* Layout */
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+.page-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; }
+.page-header h1 { font-size: 1.8rem; color: #0f172a; }
+.subtitle { font-size: 0.75rem; font-weight: 700; color: #2563eb; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.badge-total { background: #fff; border: 1px solid #e2e8f0; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600; color: #1e293b; }
+.badge-total i { color: #2563eb; margin-right: 0.3rem; }
+
+.layout-grid { display: grid; grid-template-columns: 350px 1fr; gap: 1.5rem; }
+.card { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+
+/* Form */
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: #1e293b; }
+.form-group input, .form-group select {
+    width: 100%; padding: 0.6rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.9rem; outline: none;
+}
+.form-group input:focus { border-color: #2563eb; }
+.btn-primary { background: #2563eb; color: #fff; border: none; padding: 0.6rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; flex: 1; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-secondary { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 0.6rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; flex: 1; }
+
+/* Tabel */
+.student-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.student-table th, .student-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.85rem; }
+.student-table th { background-color: #f8fafc; color: #64748b; font-weight: 600; }
+.student-table td span { background: #eff6ff; color: #2563eb; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; }
+.action-btns button { background: none; border: 1px solid #e2e8f0; padding: 0.3rem 0.5rem; border-radius: 4px; cursor: pointer; margin-right: 0.2rem; }
+.btn-edit { color: #2563eb; } .btn-delete { color: #ef4444; }
